@@ -1,0 +1,253 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: antiquewhite;
+}
+
+.topbar {
+    overflow: hidden;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 100px;
+    padding: 10px 10px;
+    border-bottom: 2px solid #ccc;
+}
+
+
+
+
+.topbar a {
+    display: flex;
+    align-items: center;
+    color: black;
+    text-decoration: none;
+}
+
+.topbar a.logo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+}
+
+.topbar a img {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.bg-custom-color {
+    background: rgb(0, 189, 252);
+}
+
+.nav-link {
+
+    margin-right: 20px;
+    background-image: linear-gradient(to right,
+            #000000,
+            #000000 50%,
+            white 50%);
+    background-size: 200% 100%;
+    background-position: -100%;
+    display: inline-block;
+    padding: 2px 0;
+    position: relative;
+    -webkit-background-clip: text;
+    background-clip: text;
+
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:before {
+    content: "";
+    background: #000000;
+    display: block;
+    position: absolute;
+    bottom: -3px;
+    left: 0;
+    width: 0;
+    height: 3px;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover {
+    background-position: 0;
+    transition: ease-in-out;
+}
+
+.nav-link:hover::before {
+    width: 100%;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-item {
+    height: 80vh;
+    min-height: 300px;
+    background: no-repeat scroll center scroll;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.carousel-caption h1 {
+    font-family: kdam thmor pro, sans-serif;
+    font-weight: 600;
+    color: #000;
+
+}
+
+.carousel-caption p {
+    font-weight: 400;
+    font-size: medium;
+    font-family: kdam thmor pro, sans-serif;
+    color: white;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 67%;
+    transform: translateY(-70%);
+}
+
+#banner {
+    background-image: linear-gradient(to right, rgb(46, 154, 190), rgb(86, 145, 165));
+    color: #fff;
+    padding-top: 5%;
+}
+
+.promo-title {
+    font-size: 35px;
+    font-weight: 600;
+    margin-top: 100;
+    font-family: cursive;
+}
+
+.promo-para {
+    font-size: 20px;
+    font-weight: 500;
+    font-family: cursive;
+
+}
+
+.button {
+    margin-top: 10;
+    margin-bottom: 30px;
+    background: rgb(0, 189, 252);
+    border: none;
+    color: #fff;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    text-decoration: none;
+}
+
+.image-fluid {
+    height: 250px;
+    width: 400px;
+    margin-bottom: 10px;
+
+}
+
+#Overveiw {
+    margin-top: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+#eligibility {
+    margin-top: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+#prep {
+    margin-top: 30px;
+    border-bottom: 2px solid #ccc;
+}
+
+#testimonials {
+    margin: 100px 0;
+}
+
+.testimonials {
+    border-left: 4px solid rgb(0, 189, 252);
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.testimonials img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    margin: 0 10px;
+}
+
+.user-details {
+    display: inline-block;
+    font-size: 12px;
+}
+
+/* Page Loader Styles */
+.page-loader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #ccc;  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+    transition: opacity 0.5s ease;
+    z-index: 9999;
+}
+
+.loader {
+    border: 8px solid #f3f3f3;  
+    border-top: 8px solid #3498db;  
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:900px) {
+    .topbar{
+        padding: 5px ;
+        max-height: 80px;
+        max-width: 205px;
+    }
+    .image-fluid{
+        max-width: 300px;
+    }
+    
+}
